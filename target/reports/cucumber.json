@@ -1,0 +1,291 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-06-25T23:37:50.634Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1444010900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.LoginStepDefinition.beforeRun()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "User should be able to creat a new Account",
+        "description": "",
+        "id": "list-account-page-functionality-validation;user-should-be-able-to-creat-a-new-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1417217900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on codefios login page",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_is_on_codefios_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3117744500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters username as \"demo@codefios.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"demo@codefios.com\"",
+                  "offset": 24
+                }
+              ],
+              "location": "steps.LoginStepDefinition.user_enters_username_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3100116000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters password as \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abc123\"",
+                  "offset": 24
+                }
+              ],
+              "location": "steps.LoginStepDefinition.user_enters_password_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10853894500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on sign in button",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_clicks_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14961300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should be landing on dashboard page",
+            "match": {
+              "location": "steps.DashboardStepDefinition.user_should_be_landing_on_dashboard_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1709793800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on List Account",
+            "match": {
+              "location": "steps.DashboardStepDefinition.user_clicks_on_List_Accounts()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 46195100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user should be able to land New Account page",
+            "match": {
+              "location": "steps.ListAccountDefinition.user_should_be_able_to_land_New_Account_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 76810700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user click on Add Account",
+            "match": {
+              "location": "steps.ListAccountDefinition.user_click_on_Add_Account()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3200856000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enter \"saving\" in the Account Name field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"saving\"",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.ListAccountDefinition.user_enter_saving_in_the_Account_Name_field(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3112042600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enter \"RM Description\" in the Description field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RM Description\"",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.ListAccountDefinition.user_enter_RM_Description_in_the_Description_field(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3104895300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user enter \"10000\" in the Initial Balance field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10000\"",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.ListAccountDefinition.user_enter_in_the_Account_Name_field(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3114677000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user enter \"12345265\" in the Account Number field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12345265\"",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.ListAccountDefinition.user_enter_in_the_A_C_Number_field(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3103470700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enter \"RMaharjan\" in the Contact Person field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RMaharjan\"",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.ListAccountDefinition.user_enter_RMaharjan_in_the_Contact_Person_field(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 85818200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user click on Save",
+            "match": {
+              "location": "steps.ListAccountDefinition.user_click_on_Save()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 720142200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user should be able to validate account created successfully",
+            "match": {
+              "location": "steps.ListAccountDefinition.user_should_be_able_to_validate_account_created_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ListAccountFeature"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@addAccountScenario1"
+          },
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "List Account page functionality validation",
+    "description": "",
+    "id": "list-account-page-functionality-validation",
+    "keyword": "Feature",
+    "uri": "classpath:features/ListAccountsLogin.feature",
+    "tags": [
+      {
+        "name": "@ListAccountFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 22
+        }
+      }
+    ]
+  }
+]
