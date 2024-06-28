@@ -46,8 +46,8 @@ public class LoginStepDefinition extends TestBase {
 			System.out.println("user name from DB:" + database.getDataFromDb("user_name"));
 			
 		}else if (loginData.equalsIgnoreCase("password")) {
-			loginPage.enterPassword("Password from DB:"+ database.getDataFromDb("password"));			
-		
+			loginPage.enterPassword(database.getDataFromDb("user_password"));			
+			System.out.println("user password from DB:" + database.getDataFromDb("user_password"));
 		}else {		
 			System.out.println("unable to retrive login data!");
 		}

@@ -1,6 +1,7 @@
 package steps;
 
 import org.junit.Assert;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.PageFactory;
 
 import io.cucumber.java.Before;
@@ -11,8 +12,9 @@ import pages.LoginPage;
 import pages.TestBase;
 
 public class ListAccountDefinition extends TestBase {
-	AccountListPage accountListPage;
 	
+	AccountListPage accountListPage;
+	  
 	@Then("user should be able to land New Account page")
 	public void user_should_be_able_to_land_New_Account_page() {
 		accountListPage = PageFactory.initElements(driver, AccountListPage.class);
@@ -58,6 +60,8 @@ public class ListAccountDefinition extends TestBase {
 
 	@Then("user should be able to validate account created successfully")
 	public void user_should_be_able_to_validate_account_created_successfully() {
+//		takeScreenshot(driver);
+	
 		String expText = "Account Added Successfully.";
 		String actual = accountListPage.getAccountAddedAlertText();
 		Assert.assertEquals("not found!", expText, actual);

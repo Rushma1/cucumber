@@ -20,10 +20,16 @@ public class Database {
 			// setting properties for MySQL
 			Class.forName("com.mysql.cj.jdbc.Driver");
 
-			// jdbc:mysql://hostName:portNumber/databaseName
+//		   jdbc:mysql://hostName:portNumber/databaseName
+			
 			String sqlUrl = "jdbc:mysql://44.195.13.80:3306/december_2023";
 			String sqlUsername = "student";
 			String sqlPassword = "Student@123";
+			
+//			String sqlUrl = "jdbc:mysql://localhost:3306/DBtest";
+//			String sqlUsername = "root";
+//			String sqlPassword = "Root1234";
+			
 			String sqlQuery = "SELECT * from login_data;";
 
 			// establish connection to DB
@@ -36,7 +42,7 @@ public class Database {
 			resultSet = statement.executeQuery(sqlQuery);
 
 			while (resultSet.next()) {
-//				columnValue = resultSet.getString(columnName);
+				columnValue = resultSet.getString(columnName);
 			}
 
 		} catch (ClassNotFoundException e) {

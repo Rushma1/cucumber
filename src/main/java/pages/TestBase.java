@@ -44,7 +44,7 @@ public class TestBase {
 		
 		
 		try {
-			FileUtils.copyDirectory(sourceFile, new File(System.getProperty("user.dir")+ "/screeshots/" + System.currentTimeMillis() + ".png"));
+			FileUtils.copyFile(sourceFile, new File(System.getProperty("user.dir")+ "/screenshots/" + System.currentTimeMillis() + ".png"));
 		} catch (IOException e) {
 			
 			e.printStackTrace();
